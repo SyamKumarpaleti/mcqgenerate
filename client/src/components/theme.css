@@ -1,0 +1,126 @@
+/* theme.css */
+:root {
+  --primary-color: #4CAF50; /* Green */
+  --secondary-color: #ffffff; /* White */
+  --background-color: #f0f0f0; /* Light Grey */
+  --text-color: #333333; /* Dark Grey */
+  --nav-background-color: #333333; /* Dark Grey */
+  --nav-text-color: #ffffff; /* White */
+  --button-background-color: #4CAF50; /* Green */
+  --button-text-color: #ffffff; /* White */
+  --border-color: #dddddd; /* Light Grey */
+}
+
+.Home {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.Home h1 {
+  color: var(--primary-color);
+}
+
+.Home h2 {
+  color: var(--primary-color);
+}
+
+.Home p {
+  font-size: 1.2em;
+}
+
+.Home nav a {
+  background-color: var(--nav-background-color);
+  color: var(--nav-text-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.Home nav a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.QuestionGeneratorWrapper {
+  display: flex;
+}
+
+.Sidebar {
+  width: 250px;
+  border-right: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.Sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Sidebar li {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.QuestionGenerator {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.QuestionGenerator h2 {
+  color: var(--primary-color);
+}
+
+.QuestionGenerator textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.QuestionGenerator button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.QuestionGenerator button:hover {
+  background-color: var(--primary-color);
+}
+
+.QuestionGenerator pre {
+  background-color: var(--background-color);
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NewChatButton {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.NewChatButton:hover {
+  background-color: var(--primary-color);
+}
